@@ -1,0 +1,81 @@
+.weather-box {
+  background-color: rgb(24, 24, 24);
+  width: 900px;
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  justify-content: space-between;
+}
+.first-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location{
+  font-size: 32px;
+  font-weight: 500;
+}
+.optional-info {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.precipitation-link, .wind-link, .temperature-link {
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 20px;
+}
+.temperature-link:hover, .precipitation-link:hover,.wind-link:hover {
+  background-color: white;
+  color: black
+} 
+.second-row {
+  display: flex;
+  padding: 10px 35px 10px 35px;
+}
+.weather-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.temperature, .air-info, .temperature-unit {
+  display: flex;
+  align-items: center;
+}
+
+.temperature-num {
+  font-size: 48px;
+  margin-right: 10px;
+}
+.temperature-celcius {
+  margin-right: 10px;
+}
+.temperature-celcius, .temperature-farenheit {
+  padding: 5px 6px 5px 6px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.temperature-celcius:hover, .temperature-farenheit:hover {
+  background-color: white;
+  color: black;
+}
+.humidity, .wind-speed {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}
+.humidity-icon-container, .wind-icon-container {
+  margin-right: 10px;
+}
+.humidity {
+  margin-right: 10px;
+}
