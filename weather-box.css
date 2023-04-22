@@ -1,5 +1,7 @@
 .weather-box {
-  background-color: rgb(24, 24, 24);
+  background-color: rgba(245, 245, 245, 0.3); /* 50% transparent white */
+  backdrop-filter: blur(10px); /* Add a blur effect to the background */
+  border: solid 1px rgba(255, 255, 255, 0.5);
   width: 900px;
   height: 200px;
   color: white;
@@ -8,6 +10,7 @@
   padding: 10px 15px 10px 15px;
   border-radius: 25px;
   justify-content: space-between;
+  z-index: 0;
 }
 .first-row{
   display: flex;
@@ -16,7 +19,7 @@
 }
 
 .location{
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 500;
 }
 .optional-info {
