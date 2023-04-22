@@ -18,3 +18,8 @@
   width: 175px;
   height: 200px;
 }
+/*Temperature*/
+.day-1 div, .day-2 div, .day-3 div, .day-4 div, .day-5 div {
+  font-size: 24px;
+  font-weight: 500;
+}
