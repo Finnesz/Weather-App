@@ -1,8 +1,8 @@
 .weather-now-container {
   display: flex;
   align-items: center;
-  background-color: rgb(24, 24, 24);
-  padding: 0px 0px 0px 25px;
+  background-color: #242424;
+  padding: 0px 0px 3px 25px;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -10,23 +10,24 @@
   justify-content: space-between;
   z-index: 1;
 }
+
 .website-title {
   display: flex;
   align-items: center;
 }
-.weather-now-container p {
-  font-size: 30px;
-  font-weight: 700;
+
+.website-title img{
+  height: 50px;
+  cursor: pointer;
 }
-.weather-now-icon {
-  display: inline-block;
-}
+
 .additional-info {
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .home-button, .news-today-button,
 .about-us-button {
   display: flex;
@@ -34,15 +35,23 @@
   justify-content: center;
   cursor: pointer;
   width: 100px;
-  padding: 29px 10px 30px 10px;
+  padding: 30px 15px 30px 15px;
   white-space: nowrap;
   transition: background-color 0.3s, color 0.3s;
+  margin-right: 0px;
+  font-weight: 450;
 }
+
 .home-button:hover, .news-today-button:hover, .about-us-button:hover {
-  background-color: white;
-  color:rgb(24, 24, 24);
+  background-color: #878484;
+  color:rgb(2, 2, 2);
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
 nav {
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 1px;
   background-color: rgba(201, 201, 201, 0.3); /* 50% transparent white */
   backdrop-filter: blur(5px); /* Add a blur effect to the background */
   border: solid 1px rgba(255, 255, 255, 0.5);
@@ -57,13 +66,15 @@ nav {
   justify-content: space-between;
   z-index: 1;
 }
+
 .right-section, .left-section{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .search-bar {
-  background-color: rgb(24, 24, 24);
+  background-color: #242424;
   color: white;
   border: none;
   width: 350px;
@@ -74,14 +85,17 @@ nav {
   font-size: 20px;
   margin: 0 5px 0 0px;
 }
+
 .search-bar:focus {
   outline: none;
 }
+
 .search-bar::placeholder {
   font-size: 18px;
   font-weight: 500;
-  color: white;
+  color: #878484;
 }
+
 .fa-location-dot, .fa-magnifying-glass {
   display: flex;
   align-items: center;
@@ -89,39 +103,48 @@ nav {
   width: 15px;
   padding: 17px 10px 17px 10px;
   border-radius: 20px;
-  border: solid 1px rgb(24, 24, 24);
+  border: solid 1px #242424;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
+
 .fa-location-dot {
   padding: 19px 5px 18px 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .fa-magnifying-glass, .fa-location-dot {
   color: white !important;
-  background-color: rgb(24, 24, 24);
+  background-color: #242424;
 }
+
 .fa-magnifying-glass:hover {
-  color: rgb(24, 24, 24) !important;
+  color: rgb(2, 2, 2)!important;
   background-color: rgb(255, 255, 255);
-  border: 1px solid;
+  border: 1px solid rgba(255, 255, 255);
+  cursor: pointer;
 }
 
 .more-info {
   display: flex;
   color: rgb(0, 0, 0);
 }
+
 .world-map-button, .weather-today-button, .suggestions-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 130px;
+  width: 150px;
   cursor: pointer;
   padding: 20px 10px 20px 10px;
   white-space: nowrap;
-  transition: background-color 0.3s, color 0.3s
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 450;
+  font-size: 17px;
 }
+
 .world-map-button:hover, .weather-today-button:hover, .suggestions-button:hover {
-  background-color: rgb(24, 24, 24);
+  background-color: #242424;
   color: white;
+  text-transform: uppercase;
 }
