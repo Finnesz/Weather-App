@@ -12,10 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-
-nav {
-  background-color: rgb(24, 24, 24);
+  margin-top: 150px;
 }
 
 .about-us-logo img{
