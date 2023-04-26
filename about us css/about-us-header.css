@@ -70,7 +70,7 @@ nav {
   top: 79px;
   left: 0px;
   right: 0px;
-  justify-content: space-between;
+  justify-content: flex-end;
   z-index: 1;
 }
 
