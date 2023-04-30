@@ -5,21 +5,26 @@
   justify-content: space-between;
 }
 
-.day-1, .day-2, .day-3, .day-4, .day-5 {
-  background-color: rgba(245, 245, 245, 0.3); /* 50% transparent white */
-  backdrop-filter: blur(10px); /* Add a blur effect to the background */
-  border: solid 1px rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
+.weather-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: white;
-  width: 175px;
-  height: 200px;
-}
-/*Temperature*/
-.day-1 div, .day-2 div, .day-3 div, .day-4 div, .day-5 div {
-  font-size: 24px;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(201, 201, 201, 0.3); /* 50% transparent white */
+  backdrop-filter: blur(5px); /* Add a blur effect to the background */
+  border: solid 1px rgba(255, 255, 255, 0.5);
   font-weight: 500;
+}
+
+.weather-card p {
+  font-size: 25px;
+}
+
+.weather-card img {
+  width: 100px;
+  object-fit: cover;
 }

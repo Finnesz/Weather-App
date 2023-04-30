@@ -57,7 +57,7 @@ nav {
   backdrop-filter: blur(5px); /* Add a blur effect to the background */
   border: solid 1px rgba(255, 255, 255, 0.5);
   display: flex;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 0px 0px 5px;
   align-items: center;
   position: fixed;
   top: 79px;
@@ -130,7 +130,11 @@ nav {
   color: rgb(0, 0, 0);
 }
 
-.world-map-button, .weather-today-button, .suggestions-button {
+.more-info a {
+  color: black;
+}
+
+.global-map-button, .weather-today-button, .suggestions-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +147,7 @@ nav {
   font-size: 17px;
 }
 
-.world-map-button:hover, .weather-today-button:hover, .suggestions-button:hover {
+.global-map-button:hover, .weather-today-button:hover, .suggestions-button:hover {
   background-color: #242424;
   color: white;
   text-transform: uppercase;

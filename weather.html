@@ -26,8 +26,6 @@
         alt="Error Image :\"></a>
       </div>
       <div class="additional-info">
-        <div class="home-button">Home</div>
-        <div class="news-today-button">News Today</div>
         <!--About Us Page Link-->
         <a href="About-us.html">
           <div class="about-us-button">About Us</div>
@@ -37,12 +35,14 @@
     <nav>
       <div class="left-section">
           <i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i>
-        <input class="search-bar" type="text" placeholder="Search your location">
-          <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;" title="Search"></i>
+        <input id="location" class="search-bar" type="text" placeholder="Search your location">
+          <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;" title="Search" onclick="getWeather()"></i>
       </div>
       <div class="right-section">
         <div class="more-info">
-          <div class="world-map-button">World Map</div>
+          <a href="weathermap.html">
+            <div class="global-map-button">Global Map</div>
+          </a>
           <div class="weather-today-button">Weather Today</div>
           <div class="suggestions-button">Suggestions</div>
         </div>
@@ -52,11 +52,6 @@
       <div class="first-row">
         <div class="location-container">
           <p class="location">Eastern Samar</p>
-        </div>
-        <div class="optional-info">
-          <div class="temperature-link">Temperature</div>
-          <div class="precipitation-link">Precipitation</div>
-          <div class="wind-link">Wind</div>
         </div>
       </div>
       <div class="second-row">
@@ -99,33 +94,9 @@
       </div>
     </div>
 
-    <div class="weather-forecast">
-      <div class="day-1">
-        <div>Monday</div>
-        <i class="fa-solid fa-cloud-rain fa-6x" style="color: #ffffff;"></i>
-        <div>27&#176;</div>
-      </div>
-      <div class="day-2">
-        <div>Tuesday</div>
-        <i class="fa-solid fa-sun fa-6x" style="color: #ffffff;"></i>
-        <div>27&#176;</div>
-      </div>
-      <div class="day-3">
-        <div>Wednesday</div>
-        <i class="fa-solid fa-cloud-sun fa-6x" style="color: #ffffff;"></i>
-        <div>27&#176;</div>
-      </div>
-      <div class="day-4">
-        <div>Thursday</div>
-        <i class="fa-regular fa-snowflake fa-6x" style="color: #ffffff;"></i>
-        <div>-1&#176;</div>
-      </div>
-      <div class="day-5">
-        <div>Friday</div>
-        <i class="fa-solid fa-cloud-showers-heavy fa-6x" style="color: #fefefe;"></i>
-        <div>27&#176;</div>
-      </div>
-    </div>
+    <div id="forecast" class="weather-forecast"></div>
+
+    <script src="weather.js"></script>
 
   </body>
 </html>
