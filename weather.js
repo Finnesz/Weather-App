@@ -69,7 +69,7 @@ function getWeather() {
       // Add a smooth animation to the weather box
       weatherbox.classList.remove("fade-in");
       setTimeout(() => {
-        weatherbox.style.display = 'flex';      weatherbox.style.display = 'flex';
+        weatherbox.style.display = 'flex';
         weatherbox.classList.add("fade-in");
       }, 0);
     })
