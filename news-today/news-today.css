@@ -1,0 +1,110 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: montserrat;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  padding: 5px;
+  background-color: aliceblue;
+  width: 80%;
+  border-color: none;
+  margin-left: 105px;
+  margin-right: 105px;
+  box-shadow: black 5px;
+  height: 100%;
+}
+
+.world-news{
+  margin-top: 150px;
+  margin-left: 10px;
+  text-align: left;
+  padding: 2px 10px 2px 10px;
+  background-color: #242424;
+  width: fit-content;
+  border-radius: 5px;
+  border: solid 1px gray;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.world-news img{
+  height: 70px;
+}
+
+.news-today-container .el-nino-img{
+  justify-content: flex-start;
+  margin: 10px 0px 10px 10px;
+  height: 450px;
+  width: 800px;
+  cursor: pointer;
+  background-color: none;
+  border-color: #242424;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-description{
+  text-align: center;
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.img-description a:hover{
+  text-transform: uppercase;
+  color: rgb(29, 191, 245);
+  transition: 0.5s;  
+}
+
+.img-description a:active{
+  color:rgb(6, 181, 239);
+  transition: 0.7s;
+}
+
+.side-img img{
+  height: 320px;
+  padding: 10px;
+  margin-right: 20px; /* add a margin between the images */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.side-img-description{
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.img-description-2{
+  max-width: 1000px;
+  margin: 0px;
+  padding-top: 0px;
+  padding: 20px;
+}
+
+.side-img h1{
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+li :hover{
+  color: blue;
+  transition: 0.2s;
+}
+

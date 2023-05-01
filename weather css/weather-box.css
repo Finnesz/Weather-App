@@ -13,10 +13,32 @@
   justify-content: space-between;
   z-index: 0;
 }
+
+.weather-box {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .first-row{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 15px 10px 15px;
 }
 
 .location{
@@ -82,4 +104,9 @@
 }
 .humidity {
   margin-right: 10px;
+}
+
+.description {
+  font-size: 35px;
+  font-weight: 500;
 }
