@@ -15,7 +15,21 @@ function getWeather() {
     .then(response => response.json())
     .then(data => {
 
-      console.log(data);
+      const condition = data.list[0].weather[0].main;
+
+      // Set the new gradient background color based on the weather condition
+      if (condition === "Clear") {
+        document.body.style.background = "linear-gradient(to top left, #ffcc00, #ff9900)";
+      } else if (condition === "Clouds") {
+        document.body.style.background = "linear-gradient(to top left, #6699cc, #336699)";
+      } else if (condition === "Rain" || condition === "Drizzle") {
+        document.body.style.background = "linear-gradient(to top left, #003366, #3399ff)";
+      } else if (condition === "Snow") {
+        document.body.style.background = "linear-gradient(to top left, rgb(200,200,200), rgb(220,220,220)";
+      } else {
+        document.body.style.background = "linear-gradient(to top left, #6699cc, #336699)";
+      }
+
       // Get the weather data for the next 5 days
       const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 6);
 
