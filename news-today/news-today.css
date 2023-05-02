@@ -10,13 +10,15 @@
   background-size: cover;
 }
 
+
 .container{
+  display: flex;
   padding: 5px;
+  justify-content: center;
+  align-items: center;
   background-color: aliceblue;
   width: 80%;
   border-color: none;
-  margin-left: 105px;
-  margin-right: 105px;
   box-shadow: black 5px;
   height: 100%;
 }
